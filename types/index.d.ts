@@ -8,14 +8,14 @@ export type SearchParamProps = {
 // ========================================
 
 export type SignUpParams = {
-  firstName: string;
-  lastName: string;
-  address1: string;
-  city: string;
-  state: string;
-  postalCode: string;
-  dateOfBirth: string;
-  ssn: string;
+  firstName?: string;
+  lastName?: string;
+  address1?: string;
+  city?: string;
+  state?: string;
+  postalCode?: string;
+  dateOfBirth?: string;
+  ssn?: string;
   email: string;
   password: string;
 };
@@ -33,6 +33,7 @@ export type User = {
   dwollaCustomerId: string;
   firstName: string;
   lastName: string;
+  name: string;
   address1: string;
   city: string;
   state: string;
@@ -210,6 +211,7 @@ export interface TotalBalanceBoxProps {
 
 export interface FooterProps {
   user: User;
+  type?: "mobile" | "desktop";
 }
 
 export interface RightSidebarProps {
